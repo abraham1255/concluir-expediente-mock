@@ -6,6 +6,9 @@ items:
   kind: Service
   metadata:
     annotations:
+      fabric8.io/git-commit: dfbc26e307c9724b75782d6799087ed2269b0cd9
+      fabric8.io/git-branch: main
+      fabric8.io/git-url: https://github.com/abraham1255/concluir-expediente-mock.git
       fabric8.io/scm-url: https://github.com/spring-projects/spring-boot/concluir-expediente-ws-mock
       fabric8.io/scm-tag: HEAD
       prometheus.io/port: "9779"
@@ -30,6 +33,9 @@ items:
   kind: Deployment
   metadata:
     annotations:
+      fabric8.io/git-commit: dfbc26e307c9724b75782d6799087ed2269b0cd9
+      fabric8.io/git-branch: main
+      fabric8.io/git-url: https://github.com/abraham1255/concluir-expediente-mock.git
       fabric8.io/scm-url: https://github.com/spring-projects/spring-boot/concluir-expediente-ws-mock
       fabric8.io/scm-tag: HEAD
     labels:
@@ -49,7 +55,10 @@ items:
     template:
       metadata:
         annotations:
+          fabric8.io/git-commit: dfbc26e307c9724b75782d6799087ed2269b0cd9
+          fabric8.io/git-branch: main
           fabric8.io/scm-tag: HEAD
+          fabric8.io/git-url: https://github.com/abraham1255/concluir-expediente-mock.git
           fabric8.io/scm-url: https://github.com/spring-projects/spring-boot/concluir-expediente-ws-mock
         labels:
           app: concluir-expediente-ws-mock
