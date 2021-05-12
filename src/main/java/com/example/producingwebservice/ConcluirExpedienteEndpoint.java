@@ -12,6 +12,7 @@ import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
 import javax.xml.bind.JAXBElement;
+import java.util.Date;
 
 @Endpoint
 public class ConcluirExpedienteEndpoint {
@@ -29,7 +30,7 @@ public class ConcluirExpedienteEndpoint {
 	@PayloadRoot(namespace = NAMESPACE_URI, localPart = "concluirExpedienteRequest")
 	@ResponsePayload
 	public JAXBElement<ConcluirExpedienteRespuesta> getConcluirExpedienteRespuesta(@RequestPayload JAXBElement<ConcluirExpedienteContrato> request) throws InterruptedException {
-		System.out.println("+++++ LLEGA PETICION +++++++");
+		System.out.println("+++++ LLEGA PETICION +++++++" +new Date());
 		Thread.sleep(sleepConclusionExpediente);
 		ObjectFactory factory = new ObjectFactory();
 		ConcluirExpedienteRespuesta response = new ConcluirExpedienteRespuesta();
@@ -38,7 +39,7 @@ public class ConcluirExpedienteEndpoint {
 		salida.setDiagnosticoRecepcion("020");
 		salida.setEntidadOrigen("530");
 		response.setObjetoRespuesta(salida);
-		System.out.println("++++++++++ RESPONDE ++++++++++");
+		System.out.println("++++++++++ RESPONDE ++++++++++" +new Date());
 		return factory.createConcluirExpedienteResponse(response);
 	}
 }
