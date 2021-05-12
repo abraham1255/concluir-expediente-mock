@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2021.05.12 a las 12:09:52 PM CDT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.procesar.com.mx/AdmonCuenta/ConclusionExpeMovil/concluirExpediente/">
+    <schemaBindings map="false">
+      <package name="mx.com.procesar.admoncuenta.conclusionexpemovil.concluirexpediente"/>
+    </schemaBindings>
+    <bindings scd="~tns:concluirExpedienteContrato">
+      <class ref="mx.com.procesar.admoncuenta.conclusionexpemovil.concluirexpediente.ConcluirExpedienteContrato"/>
+    </bindings>
+    <bindings scd="~tns:concluirExpedienteRespuesta">
+      <class ref="mx.com.procesar.admoncuenta.conclusionexpemovil.concluirexpediente.ConcluirExpedienteRespuesta"/>
+    </bindings>
+    <bindings scd="~tns:concluirExpedienteEntrada">
+      <class ref="mx.com.procesar.admoncuenta.conclusionexpemovil.concluirexpediente.ConcluirExpedienteEntrada"/>
+    </bindings>
+    <bindings scd="~tns:concluirExpedienteSalida">
+      <class ref="mx.com.procesar.admoncuenta.conclusionexpemovil.concluirexpediente.ConcluirExpedienteSalida"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.procesar.com.mx/ArquitecturaSW/DataTypes/tiposComunesProcesar/">
+    <schemaBindings map="false">
+      <package name="mx.com.procesar.arquitecturasw.datatypes.tiposcomunesprocesar"/>
+    </schemaBindings>
+    <bindings scd="~tns:IDSSN">
+      <class ref="mx.com.procesar.arquitecturasw.datatypes.tiposcomunesprocesar.IDSSN"/>
+    </bindings>
+  </bindings>
+</bindings>
+

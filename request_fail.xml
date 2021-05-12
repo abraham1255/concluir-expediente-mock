@@ -1,0 +1,23 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:concluirExpedienteRequest  xmlns:ns2="http://www.procesar.com.mx/AdmonCuenta/ConclusionExpeMovil/concluirExpediente/ " xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance " xsi:schemaLocation="http://www.procesar.com.mx/AdmonCuenta/ConclusionExpeMovil/concluirExpediente/concluirExpediente.xsd"> 
+    <idssn>
+        <idSistema>30</idSistema>
+        <idEbusiness>41</idEbusiness>
+        <idPortafolio>29</idPortafolio>
+        <idServicio>707</idServicio>
+        <idCliente>14</idCliente>
+        <idCanal>23</idCanal>
+        <codoperCliente>568COP00000070701403004102902320210112171719822692</codoperCliente>
+        <fecha>2021-01-12T17:17:19.891-06:00</fecha>
+    </idssn>
+    <cuerpo>
+        <cveAfore>568</cveAfore>
+        <idNegocio>35149200905</idNegocio>
+        <curp>EIEM920119MSLSSR04</curp>
+        <consecExpMovil>000</consecExpMovil>
+        <fechaEnvExpMovil>2021/01/08</fechaEnvExpMovil>
+        <idProcesoExpediente>78</idProcesoExpediente>
+        <accion>05</accion>
+        <fechaConfirmacion>2021/01/08</fechaConfirmacion>
+        <aplicacionOrigen>01</aplicacionOrigen>
+    </cuerpo>
+</ns2:concluirExpedienteRequest></soap:Body></soap:Envelope>
