@@ -39,7 +39,7 @@ public class ConcluirExpedienteEndpoint {
 		salida.setDiagnosticoRecepcion("020");
 		salida.setEntidadOrigen("530");
 		response.setObjetoRespuesta(salida);
-		System.out.println("++++++++++ ES UN NUEVO CAMBIO ++++++++++" +new Date());
+		System.out.println("++++++++++ RESPONSE ++++++++++" +new Date());
 		return factory.createConcluirExpedienteResponse(response);
 	}
 }
