@@ -30,7 +30,7 @@ public class ConcluirExpedienteEndpoint {
 	@PayloadRoot(namespace = NAMESPACE_URI, localPart = "concluirExpedienteRequest")
 	@ResponsePayload
 	public JAXBElement<ConcluirExpedienteRespuesta> getConcluirExpedienteRespuesta(@RequestPayload JAXBElement<ConcluirExpedienteContrato> request) throws InterruptedException {
-		System.out.println("+++++ LLEGA PETICION +++++++" +new Date());
+		System.out.println("+++++ LLEGA PETICION despues del cambio +++++++" +new Date());
 		Thread.sleep(sleepConclusionExpediente);
 		ObjectFactory factory = new ObjectFactory();
 		ConcluirExpedienteRespuesta response = new ConcluirExpedienteRespuesta();
@@ -39,7 +39,7 @@ public class ConcluirExpedienteEndpoint {
 		salida.setDiagnosticoRecepcion("020");
 		salida.setEntidadOrigen("530");
 		response.setObjetoRespuesta(salida);
-		System.out.println("++++++++++ RESPONSE ++++++++++" +new Date());
+		System.out.println("++++++++++ RESPONSE despues del cambio ++++++++++" +new Date());
 		return factory.createConcluirExpedienteResponse(response);
 	}
 }
